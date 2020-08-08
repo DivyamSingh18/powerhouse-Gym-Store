@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Webstore</title>
+<style type="text/css">
+	.yellow{
+			color: white;
+			font-size: 120%;
+	}
+	.yellow:hover{
+		box-shadow: 0px 0px 45px yellow; 
+		color: orange;
+		transition: ease  0.6s ;
+	}
+	.orange{
+		box-shadow: 0px 0px 7px grey;
+	}
+	.orange:hover{
+		box-shadow: 0px 0px 9px orange;
+		transition: ease  0.2s ;
+	}
+
+	.purple{
+		box-shadow: 0px 0px 7px grey;
+	}
+	.purple:hover{
+		box-shadow: 0px 0px 9px purple;
+		transition: ease  0.2s ;
+	}
+	.zoom{ 
+            overflow: hidden; 
+        } 
+      
+        .zoom img { 
+            width: 100%; 
+            transition: 0.5s all ease-in-out; 
+        } 
+      
+        .zoom:hover img { 
+            transform: scale(1.2); 
+        } 
+	.gopro:hover{
+		color: red;
+		background-image: linear-gradient(to top right,orange,yellow,lightyellow);
+		box-shadow: 0px 0px 50px red;
+		transition: 0.6s ease;
+	}
+
+	.gopro{
+		border: none;
+		background-image: linear-gradient(to top right, lightyellow, yellow, orange);
+		padding: 18px 20px;
+		margin-left:25px;
+		margin-top: 25px;
+		border-radius: 50px;
+		box-shadow: 0px 0px 50px purple;
+		font-size: 100%;
+	}
+	.onlinetut:hover{
+		transition: ease 0.5s;
+		box-shadow: 0px 4px 45px red;
+		background-image: linear-gradient(to top left, red,yellow, orange, yellow, red);
+		color: red;
+	}
+	.onlinetut{
+		box-shadow: 0px 4px 15px red;
+		border: none;border-radius: 30px;color: black; background-image: linear-gradient(to top right, lightyellow,yellow, orange, yellow, lightyellow);padding: 7px 20px;font-size: 140%;font-weight: bold;
+	}
+	.but:hover {
+		color: purple;
+ box-shadow: 0px 0px 20px purple;
+ transition: 0.5s ease;
+}
+	.butt:hover {
+	
+  box-shadow: 0px 0px 45px red;
+  transition: 0.5s ease;
+}
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #E3E3E3;font-family: 'Arvo', serif;">
+<!-- powerhouse GYM -->
+<div class="container-fluid" style="width: 100%;">
+	<div class="row" style=" background-image: linear-gradient(to right, #F2EA00, orange);">
+		<div class="col-5"><img src="logo.png" style="width: 300px;height: 300px; margin-left: 8%;" ></div>
+		<div class="col-7"><p style="font-size: 300%;padding: 5%;color:#864194;font-weight: bold;font-family: 'Vollkorn', serif; padding-bottom: none;margin-top: 40px;">Changing bodies,<br> Changing lives.</p></div>
+</div>	
+
+	
+
+</div>
+
+
+	<!-- NAVbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#" style="color:#864194; font-weight: bolder ">Grow More</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >
+      <li class="nav-item active" style="text-align: center;">
+        <a class="nav-link" href="#"><button class="yellow" style="background-color:#864194;border:none;padding: 7px 17px;margin-left: 20px;">Home </button></a>
+
+         <li class="nav-item active" style="text-align: center;">
+        <a class="nav-link" href="#"><button class="yellow" class="a" style="background-color:#864194;border:none;padding: 7px 17px;margin-left: 20px;">Orders </button></a>
+
+         <li class="nav-item " style="text-align: center;">
+        <a class="nav-link" href="#"><button class="yellow" class="a"style="background-color:#864194;border:none;padding: 7px 17px;margin-left: 20px;">Health</button></a>
+
+         <li class="nav-item " style="text-align: center;">
+        <a class="nav-link" href="#"><button class="yellow" class="a"style="background-color:#864194;border:none;padding: 7px 17px;margin-left: 20px;">FAQ</button></a>
+
+         <li class="nav-item " style="text-align: center;">
+        <a class="nav-link" href="#"><button class="yellow" class="a" style="background-color:#864194;border:none;padding: 7px 17px;margin-left: 20px;">Most reviewed </button></a>
+
+         <li class="nav-item" style="text-align: center;">
+        <a class="nav-link" href="#"><button class="yellow" class="a"style="background-color:#864194;border:none;padding: 7px 17px;margin-left: 20px;">Account</button></a>
+      </li>
+     
+    </ul>
+    <form class="form-inline my-2 my-lg-0" style="margin-right: 70px;color: #E0970C;font-size: 200%;">
+    Never Give Up!
+    </form>
+  </div>
+</nav>
+					
+					<!-- CART -->
+					<div class="container-fluid" style="width: 100%;">
+						<div class="row" style="padding-bottom: 10px;">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-3"></div>
+							<div id="add" class="col-6" style="margin-left: -50px;border:double 8px orange;font-size:130%;color: purple; "><center><span style="color: #950D00;font-weight: bold;font-size: 190%;">Your Cart Products</span><img src="cart.png" style="height:70px; width: 90px; "></center></div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-3"></div>
+						</div>
+					</div>
+
+					<!-- MAIN Gym Equipments section -->
+	<div class="container-fluid" style="width: 100%;">
+		<div class="row" style="background-image: url(bac.jpg);background-size: 100% 100%;background-repeat: no-repeat;height:700px; ">
+
+			<div class="col-lg-1 col-md-1 col-sm-1"></div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4" style="background-color: #864194;margin-top: 60px;margin-bottom:50px; opacity: 100%;color: white;"> 
+
+				<center><h3 style="color: #F3D561;text-shadow: 2px 2px 4px black;font-family: 'Acme', sans-serif;font-size: 170%;padding: 4px;padding-top:70px; ">Our Gym Equipments</h3><p style="font-size: 120%;height: 400px; padding: 50px; ">Starting your journey  through fitness and putting together an exercise regiment can seem pretty daunting. and expand your fitness horizons. Our equipments will help you put together an effective and informed workout regiment.<br><br><button class="butt" style="border:none;background-color: #E5EA00;padding: 5px 20px;border-radius: 20px;color: purple;font-weight: bold;">Know More</button></p></center>
+				
+			</div>
+
+			<div class="col-lg-2 col-md-2 col-sm-2"></div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4" style="margin-bottom:50px;margin-top: 60px;background-color: #864194; opacity: 100%;">
+
+								<div id="demo" class="carousel slide" data-ride="carousel" style="margin-top: 14px;">
+				  <ul class="carousel-indicators">
+				    <li data-target="#demo" data-slide-to="0" class="active"></li>
+				    <li data-target="#demo" data-slide-to="1"></li>
+				    <li data-target="#demo" data-slide-to="2"></li>
+				  </ul>
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				     <a href=""> <img src="s1.jpg" width="100%" height="400" style="border-radius: 30px;"></a>
+				      <div class="carousel-caption">
+				        <h2 style="color: red;text-shadow: 0px 0px 15px white;background-color: white;opacity: 70%;">Master Blaster</h2>
+				        <p style="color: purple;text-shadow: 0px 0px 15px white;font-size: 130%;background-color: white;opacity: 70%;">Click For More Info</p>
+				      </div>   
+				    </div>
+				    <div class="carousel-item">
+				     <a href=""> <img src="s2.jpg" width="100%" height="400" style="border-radius: 30px;"></a>
+				      <div class="carousel-caption" >
+				        <h2 style="color: red;text-shadow: 0px 0px 15px white;background-color: white;opacity: 70%;">Inclined Bench Press</h2>
+				        <p style="color: purple;text-shadow: 0px 0px 15px white;font-size: 130%;background-color: white;opacity: 70%;">Click For More Info</p>
+				      </div>   
+				    </div>
+				    <div class="carousel-item">
+				     <a href=""> <img src="s3.jpg" width="100%" height="400" style="border-radius: 30px;"></a>
+				      <div class="carousel-caption">
+				        <h2 style="color: red;text-shadow: 0px 0px 15px white;background-color: white;opacity: 70%;">Power Tower</h2>
+				        <p style="color: purple;text-shadow: 0px 0px 15px white; font-size: 130%;background-color: white;opacity: 70%;">Click For More Info</p>
+				      </div>   
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+				    <span class="carousel-control-prev-icon"></span>
+				  </a>
+				  <a class="carousel-control-next" href="#demo" data-slide="next">
+				    <span class="carousel-control-next-icon"></span>
+				  </a>
+				</div><br>
+				<center><h2 style="color: orange;font-size: 370%;border-bottom: 7px double orange;border-top: 7px double orange;">Best Sellers</h2></center>
+			</div>
+		</div>
+	</div>
+
+
+			<!-- UP to 20% OFF  -->
+  <div class="container-fluid" style="background-color: #F8F9FA;padding-top: 40px;">
+    <h1 style="text-align: center;color: purple;padding-bottom: 30px;">Upto 20% OFF on the Selected Items.</h1>      
+   <div class="row">
+   	<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+		   		<div class="card purple">
+		  <img src="15kdumbell.jpg"  style="width:100%; height: 300px;">
+		  <div class="container">
+		   <center> <h4><b>&#8377;1549</h4>
+		    <p>15 Kg Dumbell Set</p></b><button class="but" style="border:none;background-image: linear-gradient(to top right, orange, #eeff00);padding: 3px 40px;margin-bottom: 10px;font-size:100%;border-radius: 7px;font-weight: bold" data-product-sku="15Kg Dumbell Set">Add to cart</button><button class="but" style="border:none; background-image: linear-gradient(to top right, orange, #eeff00);padding: 6px 40px;margin-bottom: 10px;font-size:130%;border-radius: 10px;font-weight: bold">Buy Now</button> </center>
+		  </div>
+		</div>
+   	</div>
+   	<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+		   		<div class="card purple">
+		  <img src="flatbench.jpg" style="width:100%;height: 300px;">
+		  <div class="container">
+		    <center> <h4><b>&#8377;1699</h4> 
+		    <p>Flat Bench</p></b><button class="but" style="border:none;background-image: linear-gradient(to top right, orange, #eeff00);padding: 3px 40px;margin-bottom: 10px;font-size:100%;border-radius: 7px;font-weight: bold" data-product-sku="Flat Bench">Add to cart</button> <button class="but" style="border:none; background-image: linear-gradient(to top right, orange, #eeff00);padding: 6px 40px;margin-bottom: 10px;font-size:130%;border-radius: 10px;font-weight: bold">Buy Now</button> </center>
+		  </div>
+		</div>
+   	</div>
+   	<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+			   		<div class="card purple">
+			  <img src="tread.png" style="width:100%;height: 300px;">
+			  <div class="container">
+			    <center> <h4><b>&#8377;11599</h4> 
+		    <p>Treadmill</p></b><button class="but" style="border:none;background-image: linear-gradient(to top right, orange, #eeff00);padding: 3px 40px;margin-bottom: 10px;font-size:100%;border-radius: 7px;font-weight: bold" data-product-sku="Treadmill">Add to cart</button><button class="but" style="border:none;background-image: linear-gradient(to top right, orange, #eeff00);padding: 6px 40px;margin-bottom: 10px;font-size:130%;border-radius: 10px;font-weight: bold">Buy Now</button>  </center>
+			  </div>
+			</div>
+   	</div>
+   	<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+		   		<div class="card purple">
+		  <img src="rope.jpg"  style="width:100%;height: 300px;">
+		  <div class="container">
+		    <center> <h4><b>&#8377;449</h4> 
+		    <p>Gym Rope (6m)</p></b> <button class="but" style="border:none;background-image: linear-gradient(to top right, orange, #eeff00);padding: 3px 40px;margin-bottom: 10px;font-size:100%;border-radius: 7px;font-weight: bold" data-product-sku="Gym Rope (6m)">Add to cart</button><button class="but" style="border:none; background-image: linear-gradient(to top right, orange, #eeff00);padding: 6px 40px;margin-bottom: 10px;font-size:130%;border-radius: 10px;font-weight: bold">Buy Now</button> </center>
+		  </div>
+		</div>
+   	</div>
+   </div>
+   
+  </div>
+  		<!-- Second Row -->
+  <div class="container-fluid" style="background-color: #F8F9FA;padding-top: 30px;">      
+   <div class="row" style="padding-bottom: 30px;">
+   	<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+		   		<div class="card purple">
+		  <img src="hand.jpg"  style="width:100%; height: 300px;">
+		  <div class="container">
+		   <center> <h4><b>&#8377;299</h4>
+		    <p>Hand Grip Equipment</p></b><button class="but" style="border:none;background-image: linear-gradient(to top right, orange, #eeff00);padding: 3px 40px;margin-bottom: 10px;font-size:100%;border-radius: 7px;font-weight: bold" data-product-sku="Hand Grip Equipment">Add to cart</button><button class="but" style="border:none;background-image: linear-gradient(to top right, orange, #eeff00);padding: 6px 40px;margin-bottom: 10px;font-size:130%;border-radius: 10px;font-weight: bold">Buy Now</button></center>
+		  </div>
+		</div>
+   	</div>
+   	<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+		   		<div class="card purple">
+		  <img src="dset.jpg" style="width:100%;height: 300px;">
+		  <div class="container">
+		    <center> <h4><b>&#8377;24999</h4> 
+		    <p>Dumbell 30Kg Set</p></b> <button class="but" style="border:none;background-image: linear-gradient(to top right, orange, #eeff00);padding: 3px 40px;margin-bottom: 10px;font-size:100%;border-radius: 7px;font-weight: bold" data-product-sku="Dumbell 30Kg Set">Add to cart</button><button class="but" style="border:none;background-image: linear-gradient(to top right, orange, #eeff00);padding: 6px 40px;margin-bottom: 10px;font-size:130%;border-radius: 10px;font-weight: bold">Buy Now</button> </center>
+		  </div>
+		</div>
+   	</div>
+   	<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+			   		<div class="card purple">
+			  <img src="benchpress.jpg" style="width:100%;height: 300px;">
+			  <div class="container">
+			    <center> <h4><b>&#8377;7999</h4> 
+		    <p>Flat Benchpress</p></b><button class="but" style="border:none;background-image: linear-gradient(to top right, orange, #eeff00);padding: 3px 40px;margin-bottom: 10px;font-size:100%;border-radius: 7px;font-weight: bold" data-product-sku="Flat Benchpress">Add to cart</button><button class="but" style="border:none;background-image: linear-gradient(to top right, orange, #eeff00);padding: 6px 40px;margin-bottom: 10px;font-size:130%;border-radius: 10px;font-weight: bold">Buy Now</button>  </center>
+			  </div>
+			</div>
+   	</div>
+   	<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+		   		<div style="padding-top: 180px;font-size: 250%;">
+		   			<center><button class="but" style="background-image: linear-gradient(to top right, orange, #eeff00);padding: 6px 40px;margin-bottom: 10px;font-size:130%;border-radius: 10px;font-weight: bold;">Show All</button></center>
+		   		</div>
+   	</div>
+   </div>
+   
+  </div>
+  			<!-- Powerhouse Fitnes programme -->
+  		<div class="container-fluid" style="width: 100%;background-image: linear-gradient(to top right,#E0970C, orange,#F3D865 , yellow);">
+  			<div class="row">
+  				<div class="col-lg-1 col-md-1 col-sm-1 col-1"></div>
+  					<div class="col-lg-5 col-md-5 col-sm-5 col-5">
+  						<center><h1 style="padding-top:50px;">Join Our Powerhouse Programme For Exclusive Content</h1><p style="font-size: 165%;font-weight: bold;">"Introducing Fitness Like Never Before"</p><p style="font-size: 150%;">It Includes everything you need to know about your body, diet, health and much more. </p>
+  							<button class="gopro">30 Day Trial</button><button class="gopro">Go Premium</button></center>
+  					</div>
+  						<div class="col-lg-6 col-md-6 col-sm-6 col-6"><img src="builder.png"></div>
+  			</div>
+  		</div>
+
+
+        <!-- PHOTO & more health info -->
+        <div class="container-fluid" style="background-color: purple;">
+        	<div class="row">
+        		<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+        			<img src="did.jpeg" height="550px" width="100%" style="margin-left: -15px;">
+        		</div>
+        		<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+        		 <center><h2 style="padding: 25px;color: white;">Working Out With Online Tutorials </h2>
+        		 	<ul style="color:white;font-size: 140%;text-align: left;">
+        		 		<li>There’s nobody around to make you feel self-conscious about how you look or how fit you are.</li>
+        		 		<li>Choose your at-home workout space.</li>
+        		 		<li>Put on your gym clothes.</li>
+        		 		<li> Don’t worry about gym equipment.</li>
+        		 		<li>Set realistic fitness goals.</li>
+        		 		<li>Go on and check out our online tutorials. </li>
+
+        		 	</ul><br>
+        		 	<button class="onlinetut" style="">Online Tutorials</button>
+        		 </center>
+        		</div>
+        	</div>
+        </div>
+
+        			<!-- Shop By Collection -->
+     	<div class="container-fluid" style="width: 100%;">
+     		<center><h1 style="margin-top: 40px;margin-bottom: 30px;color: purple;"> &#9824; Shop By Collection  &#9824;</h1></center>
+			<div class="row" style="padding-bottom: 40px;">
+
+				<div class="col-lg-4 col-md-4 col-sm-4" style="background-color: none;">
+					<a href=""><div class="card zoom">
+		  <img  class="zoom" src="weights.jpg" style="width:100%;height: 400px;position: relative;">
+		  <div class="container" style="position:absolute; ">
+		    <center> <h4 style="margin-top: 320px;text-align: left;font-weight: bold;text-shadow: 0px 0px 9px red;color: white;"> &#9824; Weight Collection</h4> 
+		    <p></p> </center>
+		  </div>
+		</div></a>	
+				</div>
+
+
+				<div class="col-lg-4 col-md-34 col-sm-4" style="background-color: none;">
+					<a href=""><div class="card zoom">
+		  <img  class="zoom" src="access.jpg" style="width:100%;height: 400px;position: relative;">
+		  <div class="container" style="position:absolute; ">
+		    <center> <h4 style="margin-top: 320px;text-align: left;font-weight: bold;text-shadow: 0px 0px 9px red;color: white;"> &#9824; Fitness Accessories</h4> 
+		    <p></p> </center>
+		  </div>
+		</div></a>	
+				</div>
+
+
+				<div class="col-lg-4 col-md-4 col-sm-4" style="background-color: none;">
+					<a href=""><div class="card zoom">
+		  <img  class="zoom" src="yoga.jpg" style="width:100%;height: 400px;position: relative;">
+		  <div class="container" style="position:absolute; ">
+		    <center> <h4 style="margin-top: 320px;text-align: left;font-weight: bold;text-shadow: 0px 0px 9px red;color: white;"> &#9824; Yoga & Pilates</h4> 
+		    <p></p> </center>
+		  </div>
+		</div></a>	
+		</div>
+				</div>
+			</div>
+		</div>
+
+		     <!-- Our best Sellers  -->
+		     <div class="container-fluid" style="background-color:#F8F9FA ;padding-top: 40px;">
+    <h1 style="text-align: center;color:orange;padding-bottom: 30px;text-shadow: 0px 0px 10px yellow;">	&#9829; 	 Our Top Sellers 	&#9829;	</h1>      
+   <div class="row" style="padding-bottom: 30px;">
+   	<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+		   		<div class="card orange">
+		  <img src="gloves.jpeg"  style="width:100%; height: 300px;">
+		  <div class="container">
+		   <center> <h4><b>&#8377;899</h4>
+		    <p>Gloves</p></b><button class="but" style="border:none;background-image: linear-gradient(to top right, orange, #eeff00);padding: 3px 40px;margin-bottom: 10px;font-size:100%;border-radius: 7px;font-weight: bold" data-product-sku="Gloves">Add to cart</button><button class="but" style="border:none; background-image: linear-gradient(to top right, orange, #eeff00);padding: 6px 40px;margin-bottom: 10px;font-size:130%;border-radius: 10px;font-weight: bold">Buy Now</button> </center>
+		  </div>
+		</div>
+   	</div>
+   	<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+		   		<div class="card orange">
+		  <img src="cycle.jpg" style="width:100%;height: 300px;">
+		  <div class="container">
+		    <center> <h4><b>&#8377;11799</h4> 
+		    <p>Flat Bench</p></b><button class="but" style="border:none;background-image: linear-gradient(to top right, orange, #eeff00);padding: 3px 40px;margin-bottom: 10px;font-size:100%;border-radius: 7px;font-weight: bold" data-product-sku="Flat Bench">Add to cart</button> <button class="but" style="border:none; background-image: linear-gradient(to top right, orange, #eeff00);padding: 6px 40px;margin-bottom: 10px;font-size:130%;border-radius: 10px;font-weight: bold">Buy Now</button> </center>
+		  </div>
+		</div>
+   	</div>
+   	<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+			   		<div class="card orange">
+			  <img src="matt.jpg" style="width:100%;height: 300px;">
+			  <div class="container">
+			    <center> <h4><b>&#8377;1299</h4> 
+		    <p>Interlocking Matt</p></b><button class="but" style="border:none;background-image: linear-gradient(to top right, orange, #eeff00);padding: 3px 40px;margin-bottom: 10px;font-size:100%;border-radius: 7px;font-weight: bold" data-product-sku="Interlocking Matt">Add to cart</button><button class="but" style="border:none;background-image: linear-gradient(to top right, orange, #eeff00);padding: 6px 40px;margin-bottom: 10px;font-size:130%;border-radius: 10px;font-weight: bold">Buy Now</button>  </center>
+			  </div>
+			</div>
+   	</div>
+   	<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+		   		<div class="card orange">
+		  <img src="multi.webp"  style="width:100%;height: 300px;">
+		  <div class="container">
+		    <center> <h4><b>&#8377;29000</h4> 
+		    <p>Multi-Fitness Station</p></b><button class="but" style="border:none;background-image: linear-gradient(to top right, orange, #eeff00);padding: 3px 40px;margin-bottom: 10px;font-size:100%;border-radius: 7px;font-weight: bold" data-product-sku="Multi-Fitness Station">Add to cart</button> <button class="but" style="border:none; background-image: linear-gradient(to top right, orange, #eeff00);padding: 6px 40px;margin-bottom: 10px;font-size:130%;border-radius: 10px;font-weight: bold">Buy Now</button> </center>
+		  </div>
+		</div>
+   	</div>
+   </div>
+  </div>
+
+  		<!-- Customer Reviews -->
+  		<div class="container-fluid" style="width: 100%;background-image: linear-gradient(to right, orange,#F2EA00);">
+  			<div class="row" style="height: 400px;">
+  			 <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+  			 	<h3 style="text-align: center;margin-top: 10px; padding-top: 20px; padding-bottom: 20px;font-size: 290%;border-bottom: 9px purple double;border-top: 9px purple double;">Precious Reviews of our Customers</h3>
+  				<div id="carouselContent" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <p style="font-size: 130%;text-align: center;">Wow! I received what I wanted with fast delivery and good supplier! These are made using stretchable spandex, hence offering optimum compression. Its material for palms has textured surface and gel infused padding to ensure maximum grip and prevent calluses. Its finger loops help me get gloves on and off very easily. Best gym gloves ever. It's heavily durable. Great quality material and stitches. This is worth the price.<br><span style="font-weight: bold;">Suresh Kumar<br>Madhya Pradesh</span></p>
+        </div>
+        <div class="carousel-item ">
+            <p style="font-size: 130%;text-align: center;">never thought I would like to "train" in a gym but Rogue has completely changed my mind and transformed my body!! I came to Cab 9 months ago having been a collegiate cross country runner and after seeing the fit and smiley crew walking in and out of Rogue, I decided to give a gym routine a go. The trainers at Rogue have offered me incredible guidance and the gym is simply just a fun place to hang out.<br>
+            	<span style="font-weight: bold;">Harleen Kaur<br>New Delhi</span></p>
+        </div>
+        <div class="carousel-item">
+            <p style="font-size: 130%;text-align: center;">The instructors are extremely knowledgeable, highly motivated, and awesome people to be around. I've never been in a gym with a better vibe. I am making my third trip back to Cabarete to train at Rogue for two months because I know Zach and his staff get it done! No matter if your goal is to simply stay fit during vacation or to train like a hardcore athlete.
+            	<br><span style="font-weight: bold;">Rahul Verma<br>Haryana</span></p>
+        </div>
+        <div class="carousel-item ">
+            <p style="font-size: 130%;text-align: center;">The instructor was extremely welcoming and we were able to do all our routines while on holiday for a reasonable cost.
+             <br><span style="font-weight: bold;">Bikram Patel<br>Bihar</span></p>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+  			</div>
+  			
+  		</div>
+  	 </div>
+
+  	     <!-- Our Links -->
+  	     <div class="container-fluid" style="width: 100%;background-color: purple;height: 390px;padding-top: 30px;margin-bottom: 30px;">
+  	     	<center><h1 style="color: white;padding-top: 20px;padding-bottom: 10px;">EXPLORE OUR SERVICES ACROSS 17+ INDIAN CITIES</h1><p style="color: white; font-size: 150%;">Mumbai | Delhi | Punjab | kerela | Rajasthan | Bihar | Gujarat | Goa and Many More.</p></center>
+  	     	<div class="row" style="padding-top: 30px;margin-bottom:0px;background-color: purple;padding-bottom: 40px; ">
+  	     		<div class="col-lg-3 col-md-3 col-sm-3 col-3" style="padding-bottom: 80px;">
+  	     			<img class="" src="users.png" style="margin-left: 60px;"><p style="margin-left: 40px;font-size: 130%;color: white;">6 Million+ users</p>
+  	     		</div>
+  	     		<div class="col-lg-3 col-md-3 col-sm-3 col-3" style="padding-bottom: 80px;">
+  	     			<img src="arm.png" style="margin-left: 58px;"><p style="font-size: 130%;color: white;">14K Fitness activities</p>
+  	     		</div>
+  	     		<div class="col-lg-3 col-md-3 col-sm-3 col-3" style="padding-bottom: 80px;">
+  	     			<img src="phone.png" style="margin-left: 75px;"><p style="font-size: 130%;color: white;">1 Million+ Bookings</p>
+  	     		</div>
+  	     		<div class="col-lg-3 col-md-3 col-sm-3 col-3" style="padding-bottom: 80px;">
+  	     			<img src="reviews.png" style="margin-left: 70px;"><p style="font-size: 130%;color: white;">96K valid customer reviews</p>
+  	     		</div>
+  	     	</div>
+  	     </div>
+
+  	         <!-- FOOTER -->
+  	         <div class="container-fluid" style="width: 100%;background-color:#363636;height: 150px;">
+  	         	<div class="row" style="padding-top: 30px;">
+  	         		<div class="col-lg-4 col-md-4 col-sm-4 col-4" style="margin-left: 0px;">
+  	         			<h5 style="color: orange;text-shadow: 0px 0px 10px black;">FOR ANY ASSISTANCE</h5>
+  	         			<img src="phone-icon.png"> <span style="color: white;"> +91-78884-72926</span><br>
+  	         			<img src="mail-icon.png"><span style="color: white;"> divyamsingh2000@gmail.com</span>
+  	         		</div>
+  	         		<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+  	         				<h5 style="color: orange;text-shadow: 0px 0px 10px black;">Subscribe us for Exclusive Details</h5>
+  	         				<input type="text" name="" placeholder="Email ID"><button style="border: 3px inset orange ;margin-left: 10px;color: orange;background-color: #454545;">Submit</button>
+  	         		</div>
+  	         		<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+  	         			<h5 style="color: orange;text-shadow: 0px 0px 10px black;">Follow us on Social Media</h5>
+  	         			<a href=""><img src="insta.png" style="height: 50px;width: 50px;"></a>
+  	         			<a href=""><img src="twitter.png" style="height: 50px; width: 50px;margin-left: 5px;"></a>
+  	         			<a href=""><img src="fb.png" style="height: 50px; width: 50px;margin-left: 5px;"></a>
+  	         			<a href=""><img src="in.png" style="height: 50px; width: 50px;margin-left: 5px;"></a>
+  	         		</div>
+  	         	</div>
+  	         </div>
+
+
+<script type="text/javascript">
+	let buttons = document.getElementsByTagName("button");
+
+const cart = [];
+
+for(var i=0; i<buttons.length; i++) {
+  let button = buttons[i];
+  console.log(button);
+  button.addEventListener('click', function(event){
+    console.clear();
+    console.log(event.target);
+    console.log(event.target.dataset.productSku);
+    cart.push( event.target.dataset.productSku );
+    console.log(cart)
+    document.getElementById("add").innerHTML = (cart) ;
+  });
+}
+</script>
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
